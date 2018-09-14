@@ -4,7 +4,7 @@
   "description": "Gatsby lingui starter",
   "version": "1.0.5",
   "author": "igorko82@me.com",
-  "repository": "hupe1980/gatsby-i18n",
+  "repository": "ikhudo/gatsby-i18n-plugin",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

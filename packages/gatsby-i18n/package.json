@@ -3,7 +3,7 @@
   "description": "Gatsby plugin that provides i18n support",
   "version": "1.0.5",
   "author": "igorko82@me.com",
-  "repository": "hupe1980/gatsby-i18n",
+  "repository": "ikhudo/gatsby-i18n-plugin",
   "keywords": [
     "react",
     "gatsby",
@@ -14,9 +14,6 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "files": [
-    "plugin.js"
-  ],
   "scripts": {
     "build": "rimraf lib && babel src --out-dir lib --ignore __tests__",
     "build:watch": "rimraf lib && babel -w src --out-dir lib --ignore __tests__",
