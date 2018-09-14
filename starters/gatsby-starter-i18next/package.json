@@ -2,7 +2,7 @@
   "name": "gatsby-starter-i18next",
   "private": true,
   "description": "Gatsby i18next starter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "igorko82@me.com",
   "repository": "ikhudo/gatsby-i18n-plugin",
   "license": "MIT",
@@ -13,7 +13,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -e gatsby-starter-i18next"
   },
   "dependencies": {
-    "@igorko/gatsby-plugin-i18next": "^1.0.5",
+    "@igorko/gatsby-plugin-i18next": "^1.0.6",
     "gatsby": "^2.0.0-beta.105",
     "gatsby-plugin-manifest": "^2.0.2-beta.6",
     "gatsby-plugin-offline": "^2.0.0-beta.9",

@@ -1,7 +1,7 @@
 {
   "name": "@igorko/gatsby-plugin-lingui",
   "description": "Gatsby plugin that provides i18n support",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "igorko82@me.com",
   "repository": "ikhudo/gatsby-i18n-plugin",
   "keywords": [
@@ -20,9 +20,9 @@
     "prepare": "yarn run build"
   },
   "dependencies": {
+    "@igorko/gatsby-i18n": "^1.0.6",
     "@lingui/babel-preset-react": "^2.4.0",
-    "@lingui/react": "^2.4.0",
-    "@igorko/gatsby-i18n": "^1.0.5"
+    "@lingui/react": "^2.4.0"
   },
   "peerDependencies": {
     "gatsby": ">2.0.0-alpha"
