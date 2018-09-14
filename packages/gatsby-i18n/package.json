@@ -1,0 +1,42 @@
+{
+  "name": "@igorko/gatsby-i18n",
+  "description": "Gatsby plugin that provides i18n support",
+  "version": "1.0.5",
+  "author": "igorko82@me.com",
+  "repository": "hupe1980/gatsby-i18n",
+  "keywords": [
+    "react",
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-component",
+    "lingui",
+    "i18n"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "plugin.js"
+  ],
+  "scripts": {
+    "build": "rimraf lib && babel src --out-dir lib --ignore __tests__",
+    "build:watch": "rimraf lib && babel -w src --out-dir lib --ignore __tests__",
+    "prepare": "yarn run build"
+  },
+  "dependencies": {
+    "@igorko/langtag-utils": "^1.0.2",
+    "react-helmet": "^5.2.0"
+  },
+  "peerDependencies": {
+    "gatsby": ">2.0.0-alpha"
+  },
+  "devDependencies": {
+    "gatsby": "^2.0.0-beta.105",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "rimraf": "^2.6.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "e0c6da7acc9c052d9f507255d09fb82df8ce6adf"
+}
