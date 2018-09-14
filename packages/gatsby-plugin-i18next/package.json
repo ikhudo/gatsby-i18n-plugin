@@ -1,7 +1,7 @@
 {
-  "name": "@igorko/gatsby-plugin-i18next",
+  "name": "gatsby-plugin-i18next",
   "description": "Gatsby plugin that provides i18n support",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "igorko82@me.com",
   "repository": "ikhudo/gatsby-i18n-plugin",
   "keywords": [
@@ -20,7 +20,7 @@
     "prepare": "yarn run build"
   },
   "dependencies": {
-    "@igorko/gatsby-i18n": "^1.0.7",
+    "gatsby-i18n": "^1.0.9",
     "i18next": "^11.6.0",
     "react-i18next": "^7.10.1"
   },
@@ -34,6 +34,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "038365d7e264bb1088bddff8bbc77a74c3d31a3b"
+  }
 }
