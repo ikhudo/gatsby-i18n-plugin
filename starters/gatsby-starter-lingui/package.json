@@ -2,7 +2,7 @@
   "name": "gatsby-starter-lingui",
   "private": true,
   "description": "Gatsby lingui starter",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "igorko82@me.com",
   "repository": "ikhudo/gatsby-i18n-plugin",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -e gatsby-starter-lingui"
   },
   "dependencies": {
-    "@igorko/gatsby-plugin-lingui": "^1.0.6",
+    "@igorko/gatsby-plugin-lingui": "^1.0.7",
     "@lingui/react": "^2.4.0",
     "gatsby": "^2.0.0-beta.105",
     "gatsby-plugin-manifest": "^2.0.2-beta.6",
