@@ -1,7 +1,7 @@
 {
   "name": "gatsby-i18n",
   "description": "Gatsby plugin that provides i18n support",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": "igorko82@me.com",
   "repository": "ikhudo/gatsby-i18n-plugin",
   "keywords": [
@@ -35,5 +35,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "8248b8a8abe9201098e6f85806587e8778b782bb"
+  "gitHead": "ccb050810ff8741a5c0faeece6aa38263b5ca9e3"
 }
