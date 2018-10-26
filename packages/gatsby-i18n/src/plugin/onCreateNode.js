@@ -1,69 +1,72 @@
-import crypto from 'crypto';
+// import crypto from 'crypto';
 
-const onCreateNode = async ({
-  node,
-  actions,
-  loadNodeContent,
-  getNode,
-  reporter,
-}) => {
-  const {
-    absolutePath,
-    internal: { mediaType, type },
-    sourceInstanceName,
-    relativeDirectory,
-    name,
-    id,
-  } = node;
-  const { createNode, createParentChildLink } = actions;
+// const onCreateNode = async ({
+//   node,
+//   actions,
+//   loadNodeContent,
+//   getNode,
+//   reporter,
+// }) => {
+//   const {
+//     absolutePath,
+//     internal: { mediaType, type },
+//     sourceInstanceName,
+//     relativeDirectory,
+//     name,
+//     id,
+//   } = node;
 
-  if (type !== 'File' || sourceInstanceName !== `locale`) return;
+//   const { createNode, createParentChildLink } = actions;
 
-  //Ignore _build folder
-  if (/^_build/.test(relativeDirectory)) return;
-  //Ignore .DS_Store
-  if (/^.DS/.test(relativeDirectory)) return;
+//   if (type !== 'File' || sourceInstanceName !== `locale`) return;
 
-  //process.env.NODE_ENV === `production`;
-  //if (mediaType === `application/json`) return;
+//   console.log('@@@ will run');
 
-  const activity = reporter.activityTimer(
-    `@igorko: create node: ${relativeDirectory}_${name}`,
-  );
-  activity.start();
+//   //Ignore _build folder
+//   if (/^_build/.test(relativeDirectory)) return;
+//   //Ignore .DS_Store
+//   if (/^.DS/.test(relativeDirectory)) return;
 
-  const content = await loadNodeContent(node);
+//   //process.env.NODE_ENV === `production`;
+//   //if (mediaType === `application/json`) return;
 
-  // const compiledContent = requireFromString(content);
-  // const data = JSON.stringify({ ...compiledContent }, function(key, value) {
-  //   if (typeof value === 'function') {
-  //     return '/Function(' + value.toString() + ')/';
-  //   }
-  //   return value;
-  // });
-  const data = JSON.stringify(JSON.parse(content), undefined, '');
+//   const activity = reporter.activityTimer(
+//     `@igorko: create node: ${relativeDirectory}_${name}`,
+//   );
+//   activity.start();
 
-  const contentDigest = crypto
-    .createHash(`md5`)
-    .update(data)
-    .digest(`hex`);
+//   const content = await loadNodeContent(node);
 
-  const localeNode = {
-    id: `${id} >>> Locale`,
-    children: [],
-    parent: id,
-    internal: { content, contentDigest, type: `Locale` },
-    lng: relativeDirectory,
-    ns: name,
-    data,
-    fileAbsolutePath: absolutePath,
-  };
+//   // const compiledContent = requireFromString(content);
+//   // const data = JSON.stringify({ ...compiledContent }, function(key, value) {
+//   //   if (typeof value === 'function') {
+//   //     return '/Function(' + value.toString() + ')/';
+//   //   }
+//   //   return value;
+//   // });
+//   const data = JSON.stringify(JSON.parse(content), undefined, '');
 
-  createNode(localeNode);
+//   const contentDigest = crypto
+//     .createHash(`md5`)
+//     .update(data)
+//     .digest(`hex`);
 
-  createParentChildLink({ parent: node, child: localeNode });
+//   const localeNode = {
+//     id: `${id} >>> Locale`,
+//     children: [],
+//     parent: id,
+//     internal: { content, contentDigest, type: `Locale` },
+//     lng: relativeDirectory,
+//     ns: name,
+//     data,
+//     fileAbsolutePath: absolutePath,
+//   };
 
-  activity.end();
-};
+//   createNode(localeNode);
 
-export default onCreateNode;
+//   createParentChildLink({ parent: node, child: localeNode });
+
+//   activity.end();
+// };
+
+// export default onCreateNode;

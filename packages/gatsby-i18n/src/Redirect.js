@@ -1,7 +1,7 @@
 import { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { withPrefix, navigate } from 'gatsby';
-import { lookup, navigatorLanguages } from '@igorko/langtag-utils';
+import { lookup, navigatorLanguages } from '@wapps/langtag-utils';
 
 import { isBrowser } from './utils';
 

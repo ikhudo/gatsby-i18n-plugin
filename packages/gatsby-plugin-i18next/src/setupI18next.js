@@ -1,8 +1,8 @@
 import i18next from 'i18next';
 
-function setupI18next(fallbackLng) {
+function setupI18next({ fallbackLng, debug }) {
   i18next.init({
-    debug: false,
+    debug,
     defaultNS: 'messages',
     fallbackLng,
   });

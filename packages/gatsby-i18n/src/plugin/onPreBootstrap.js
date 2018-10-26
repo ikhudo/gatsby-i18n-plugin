@@ -7,7 +7,7 @@ export const onPreBootstrap = ({ store, reporter }) => {
   const program = store.getState().program;
 
   const module = `
-      const { Redirect } = require('@igorko/gatsby-i18n');
+      const { Redirect } = require('gatsby-i18n');
       module.exports = Redirect;
   `;
 

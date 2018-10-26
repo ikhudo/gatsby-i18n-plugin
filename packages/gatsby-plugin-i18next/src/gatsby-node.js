@@ -1,6 +1,6 @@
 export {
   onPreBootstrap,
-  onCreateNode,
+  //onCreateNode,
   onPreExtractQueries,
   onCreatePage,
-} from '@igorko/gatsby-i18n/plugin';
+} from 'gatsby-i18n/plugin';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { I18nextProvider } from 'react-i18next';
-import { I18nProvider } from '@igorko/gatsby-i18n';
+import { I18nProvider } from 'gatsby-i18n';
 
 import setupI18next from './setupI18next';
 
@@ -11,7 +11,7 @@ const withI18next = (options = {}) => Comp => {
 
       const { pageContext } = props;
 
-      this.i18n = setupI18next(pageContext.fallbackLng);
+      this.i18n = setupI18next(pageContext);
       this.activateLng();
     }
 
@@ -20,9 +20,11 @@ const withI18next = (options = {}) => Comp => {
 
       if (data.locales) {
         data.locales.edges.forEach(({ node }) => {
-          const { lng, ns, data } = node;
-          if (!this.i18n.hasResourceBundle(lng, ns)) {
-            this.i18n.addResources(lng, ns, JSON.parse(data));
+          const { lng, data } = node;
+          const parsedData = JSON.parse(data);
+
+          if (!this.i18n.hasResourceBundle(lng, 'messages')) {
+            this.i18n.addResources(lng, 'messages', parsedData);
           }
         });
       }
@@ -40,7 +42,7 @@ const withI18next = (options = {}) => Comp => {
       return (
         <I18nextProvider i18n={this.i18n}>
           <I18nProvider {...this.props.pageContext}>
-            <Comp {...this.props} />
+            <Comp {...this.props} lng={this.props.pageContext.lng} />
           </I18nProvider>
         </I18nextProvider>
       );

@@ -3,8 +3,8 @@
 
 ## Installation
 ```sh
-yarn add @igorko/gatsby-i18n
-# npm install --save @igorko/gatsby-i18n
+yarn add gatsby-i18n
+# npm install --save gatsby-i18n
 ```
 
 ## License
