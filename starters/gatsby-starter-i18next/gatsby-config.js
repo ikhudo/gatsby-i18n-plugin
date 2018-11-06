@@ -22,11 +22,11 @@ module.exports = {
       },
     },
     {
-      resolve: '@igorko/gatsby-plugin-i18next',
+      resolve: `gatsby-plugin-i18next`,
       options: {
         availableLngs: ['en', 'de'],
         fallbackLng: 'en',
-        siteUrl: 'https://www.example.com/',
+        debug: true,
       },
     },
     'gatsby-plugin-offline',

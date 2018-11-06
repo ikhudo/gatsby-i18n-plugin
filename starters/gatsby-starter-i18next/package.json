@@ -13,14 +13,15 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -e gatsby-starter-i18next"
   },
   "dependencies": {
-    "gatsby": "^2.0.0-beta.105",
+    "gatsby": "^2.0.40",
     "gatsby-plugin-i18next": "^1.1.5",
-    "gatsby-plugin-manifest": "^2.0.2-beta.6",
-    "gatsby-plugin-offline": "^2.0.0-beta.9",
-    "gatsby-plugin-react-helmet": "^3.0.0-beta.4",
-    "gatsby-source-filesystem": "^2.0.1-beta.10",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "gatsby-plugin-layout": "^1.0.7",
+    "gatsby-plugin-manifest": "^2.0.7",
+    "gatsby-plugin-offline": "^2.0.12",
+    "gatsby-plugin-react-helmet": "^3.0.1",
+    "gatsby-source-filesystem": "^2.0.7",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-helmet": "^5.2.0"
   },
   "gitHead": "1bf52e4b2a459af17526d03ebaf34cb1a87b5ab4"

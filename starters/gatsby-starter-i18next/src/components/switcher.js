@@ -1,5 +1,5 @@
 import React from 'react';
-import { Language } from '@igorko/gatsby-plugin-i18next';
+import { Language } from 'gatsby-plugin-i18next';
 
 const Switcher = ({ changeLng, lng, availableLngs }) => (
   <ul style={{ listStyle: 'none' }}>

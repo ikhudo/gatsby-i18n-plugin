@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { I18n } from 'react-i18next';
-import { Link, withI18next } from '@igorko/gatsby-plugin-i18next';
+import { Link, withI18next } from 'gatsby-plugin-i18next';
 
 import Layout from '../components/layout';
 
@@ -22,7 +22,7 @@ export default withI18next()(SecondPage);
 export const query = graphql`
   query($lng: String!) {
     locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
-      ...LocaleFragment
+      ...TranslationFragment
     }
   }
 `;

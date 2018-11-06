@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '@igorko/gatsby-plugin-i18next';
+import { Link } from 'gatsby-plugin-i18next';
 
 import Switcher from './Switcher';
 
