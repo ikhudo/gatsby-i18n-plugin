@@ -1,7 +1,7 @@
 {
   "name": "gatsby-i18n",
   "description": "Gatsby plugin that provides i18n support",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "author": "igorko82@me.com",
   "repository": "ikhudo/gatsby-i18n-plugin",
   "keywords": [
@@ -20,6 +20,7 @@
     "prepare": "yarn run build"
   },
   "dependencies": {
+    "@babel/runtime": "^7.1.2",
     "@wapps/langtag-utils": "^1.0.2",
     "react-helmet": "^5.2.0"
   },
@@ -27,6 +28,8 @@
     "gatsby": ">2.0.0-alpha"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "babel-core": "^6.4.0",
     "gatsby": "^2.0.0-beta.105",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -35,5 +38,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "5fdc7938e532dfae0d3e24cc071fced8a56d484e"
+  "gitHead": "e8051aaea75eb462716293d4930476f075646c94"
 }
