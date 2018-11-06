@@ -1,6 +1,6 @@
 export {
   onPreBootstrap,
-  //onCreateNode,
+  onCreateNode,
   onPreExtractQueries,
   onCreatePage,
 } from 'gatsby-i18n/plugin';

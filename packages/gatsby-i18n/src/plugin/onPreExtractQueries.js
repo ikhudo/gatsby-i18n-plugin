@@ -6,13 +6,13 @@ const onPreExtractQueries = async ({ store, getNodes }, pluginOptions) => {
     import { graphql } from 'gatsby';
 
     export const localeFragment = graphql\`
-      fragment TranslationFragment on ${
-        pluginOptions.translationsConnections
-      }Connection {
+      fragment TranslationFragment on ${pluginOptions.translationsConnections ||
+        `Locale`}Connection {
         edges {
           node {
             id
             lng
+            ns
             data
           }
         }
