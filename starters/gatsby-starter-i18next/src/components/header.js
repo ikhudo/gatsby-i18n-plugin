@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby-plugin-i18next';
 
-import Switcher from './Switcher';
+import Switcher from './switcher';
 
 const Header = ({ siteTitle }) => (
   <div
