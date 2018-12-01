@@ -1,6 +1,5 @@
 import { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-import { withPrefix, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 import { lookup, navigatorLanguages } from '@wapps/langtag-utils';
 
 import { isBrowser } from './utils';
@@ -19,7 +18,7 @@ class Redirect extends PureComponent {
 
     window.localStorage.setItem('@igorkoLng', detectedLng);
 
-    const newUrl = withPrefix(`/${detectedLng}${redirectPage}`);
+    const newUrl = `/${detectedLng}${redirectPage}`;
     navigate(newUrl, { replace: true });
   };
 
