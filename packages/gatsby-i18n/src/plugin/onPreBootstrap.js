@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 
 export const onPreBootstrap = ({ store, reporter }) => {
   const activity = reporter.activityTimer(
-    'gatsby-i18n: copy redirect component',
+    '@gatsby-i18n: copy redirect component',
   );
   activity.start();
 
