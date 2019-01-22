@@ -3,8 +3,8 @@
 
 ## Installation
 ```sh
-yarn add @igorko/gatsby-plugin-i18next
-# npm install --save @igorko/gatsby-plugin-i18next
+yarn add gatsby-plugin-i18next
+# npm install --save gatsby-plugin-i18next
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ Edit `gatsby-config.js`
 module.exports = {
   plugins: [
     {
-      resolve: `@igorko/gatsby-plugin-i18next`,
+      resolve: `@gatsby-plugin-i18next`,
       options: {
         // Add any options here
       },

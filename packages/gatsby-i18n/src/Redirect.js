@@ -13,10 +13,10 @@ class Redirect extends PureComponent {
     const { fallbackLng, availableLngs, redirectPage } = this.props.pageContext;
 
     const detectedLng =
-      window.localStorage.getItem('@igorkoLng') ||
+      window.localStorage.getItem('@gatsby-i18n-Lng') ||
       lookup(availableLngs, navigatorLanguages(), fallbackLng);
 
-    window.localStorage.setItem('@igorkoLng', detectedLng);
+    window.localStorage.setItem('@gatsby-i18n-Lng', detectedLng);
 
     const newUrl = `/${detectedLng}${redirectPage}`;
     navigate(newUrl, { replace: true });

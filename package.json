@@ -2,9 +2,10 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "build": "lerna run build --scope @igorko/*",
-    "build:watch": "lerna run build:watch --parallel --scope @igorko/*",
-    "deploy": "lerna run deploy --concurrency 1 --scope gatsby-starter*"
+    "build": "lerna run build --ignore gatsby-starter*",
+    "build:watch": "lerna run build:watch --parallel --ignore gatsby-starter*",
+    "deploy": "lerna run deploy --concurrency 1 --scope gatsby-starter*",
+    "format": "prettier --config ./.prettierrc --write '**/*.js'"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
