@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-plugin-i18next",
+  "name": "@wework/gatsby-plugin-i18next",
   "description": "Gatsby plugin that provides i18n support",
-  "version": "1.1.7",
-  "author": "igorko82@me.com",
-  "repository": "ikhudo/gatsby-i18n-plugin",
+  "version": "1.2.0",
+  "repository": "WeConnect/gatsby-i18n-plugin",
   "keywords": [
     "react",
     "gatsby",
@@ -21,7 +20,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.1.2",
-    "gatsby-i18n": "1.1.6",
+    "@wework/gatsby-i18n": "1.2.0",
     "i18next": "11.6.0",
     "i18next-xhr-backend": "1.5.1",
     "react-i18next": "9.0.2"
@@ -32,12 +31,8 @@
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.1.0",
     "babel-core": "^6.4.0",
-    "gatsby": "^2.0.0-beta.105",
+    "gatsby": "^2.0.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "gitHead": "725ae5554e989002c0143a663f35877972580b20"
+  }
 }

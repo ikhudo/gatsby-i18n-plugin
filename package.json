@@ -2,9 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "build": "lerna run build --ignore gatsby-starter*",
-    "build:watch": "lerna run build:watch --parallel --ignore gatsby-starter*",
-    "deploy": "lerna run deploy --concurrency 1 --scope gatsby-starter*",
+    "build": "lerna run build",
+    "build:watch": "lerna run build:watch --parallel",
     "format": "prettier --config ./.prettierrc --write '**/*.js'"
   },
   "devDependencies": {
@@ -30,7 +29,6 @@
     "prettier": "^1.13.7"
   },
   "workspaces": [
-    "packages/*",
-    "starters/*"
+    "packages/*"
   ]
 }

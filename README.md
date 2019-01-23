@@ -4,15 +4,5 @@
 ## Packages
 This repository is a monorepo managed with [Lerna](https://github.com/lerna/lerna). [Several packages](/packages) are published to npm from the same codebase.
 
-## Starters
-### gatsby-starter-i18next
-[Demo](https://hupe1980.github.io/gatsby-i18n/gatsby-starter-i18next) [Source](/starters/gatsby-starter-i18next)
-- i18next integration
-- automatic browser-language detection and redirection
-- language switcher
-- hreflang
-- ...
-
-
 ## License
 [MIT](LICENSE)
