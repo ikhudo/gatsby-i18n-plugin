@@ -17,8 +17,11 @@ class Redirect extends PureComponent {
       lookup(availableLngs, navigatorLanguages(), fallbackLng);
 
     window.localStorage.setItem('@igorkoLng', detectedLng);
+    const { hash, search } = window.location;
 
-    const newUrl = `/${detectedLng}${redirectPage}`;
+    const newUrl = `/${detectedLng}${redirectPage}${search ? search : ''}${
+      hash ? hash : ''
+    }`;
     navigate(newUrl, { replace: true });
   };
 
