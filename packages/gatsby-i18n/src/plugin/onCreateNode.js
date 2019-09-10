@@ -20,7 +20,6 @@ const onCreateNode = async ({
 
   if (type !== 'File' || sourceInstanceName !== `locale`) return;
 
-  console.log('@@@ will run');
 
   //Ignore _build folder
   if (/^_build/.test(relativeDirectory)) return;
