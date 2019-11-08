@@ -18,5 +18,11 @@ Link.propTypes = {
 };
 
 export default props => (
-  <I18nConsumer>{({ lng }) => <Link lng={lng} {...props} />}</I18nConsumer>
+  <I18nConsumer>
+    {value => {
+      console.log('!!! value', value);
+
+      return <Link lng={'pl'} {...props} />;
+    }}
+  </I18nConsumer>
 );

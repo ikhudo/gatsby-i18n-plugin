@@ -6,7 +6,7 @@ import { isBrowser } from './utils';
 
 class Redirect extends PureComponent {
   componentDidMount() {
-    if (!isBrowser()) this.perform();
+    if (isBrowser()) this.perform();
   }
 
   perform = () => {
